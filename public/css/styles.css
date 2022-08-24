@@ -1,0 +1,87 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+h1 {
+font-family: Fraunces;
+font-weight: 700;
+color: hsl(212, 21%, 14%);
+font-size: 35px;
+padding-bottom: 10px;
+padding-top: 10px;
+margin-block-start: 15px;
+margin-block-end: 15px;
+}
+
+img {
+border-radius: 10px 0px 0px 10px;
+max-height: 450px;
+max-width: 300px;
+}
+
+.card_Global {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  max-height: 450px;
+  max-width: 600px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  padding: 15px 62px;
+  text-align: center;
+  font-size: 15px;
+  max-width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.icon-cart {
+  padding-right: 5px;
+}
+
+.image {
+float: left;
+padding: 0 40px 0 0;
+max-height: auto;
+max-width: auto;
+}
+
+.card_content {
+  padding: 18px 0px 0px 0px;
+}
+
+.title {
+  padding-top: 0px;
+}
+
+.float-container {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.float-price {
+    max-width: 50%;
+    float: left;
+}
+
+.float-price2 {
+  padding-left: 12px;
+  padding-top: 11px;
+}
+
+.attribution {
+  text-align: center;
+}
