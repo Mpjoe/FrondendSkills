@@ -1,95 +1,101 @@
-/* Smartphones */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-}
 
-/* Desktop */
-@media only screen and (max-width : 1440px) {
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-
-  place-content: center;
-  min-height: 100vh;
   background-color: hsl(30, 38%, 92%);
-  padding: 0.625rem;
+  font-family: "Fraunces";
+  font-family: "Montserrat";
+  font-size: 0.875rem;
 }
 
-h1 {
-font-family: Fraunces;
-font-weight: 700;
-color: hsl(212, 21%, 14%);
-font-size: 2.19rem;
-line-height: 2rem;
-width: auto;
-}
-
-img {
-max-width: 100%;
-object-fit: cover;
-height: 100%;
-border-radius: 0.625rem 0.625rem 0 0;
-}
-
-.card_Global { 
+/*-- 343-612 Phone version --*/
+.card_container {
   display: grid;
+  width: 21.44rem;
+  height: 38.25rem;
+  border-radius: 0.875rem;
+  grid-column: auto;
+  margin: 12.19rem auto 5rem;
   background-color: hsl(0, 0%, 100%);
-  border-radius:0.625rem;
-  font-family: Montserrat;
-  font-size: 0.87rem;
-  color: hsl(228, 12%, 48%);
-  width: auto;
 }
 
-.title {
-  letter-spacing:0.25rem;
-  margin: 0rem;
+.card_image_mobile {
+  width: 21.44rem;
+  height: 15rem;
+  border-radius: 0.875rem 0.875rem 0 0;
 }
 
-.paragraph {
-  line-height: 1.44rem;
-  width: auto;
-  margin: 0rem;
-  padding: 0rem;
-
-}
-
-.image {
-width: 100%
-flex: 1 0 50%;
+.card_image_desktop {
+  display: none;
 }
 
 .card_content {
-margin: 1.5rem;
-flex: 1 0 50%;
+  padding: 1.5rem;
 }
 
-.price_container {
+.card_perfume {
+  font-family: "Montserrat";
+  letter-spacing: 0.19rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 0.75rem;
+}
+
+.card_title {
+  font-family: "Fraunces";
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: hsl(212, 21%, 14%);
+}
+
+.card_description {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.25rem;
+  letter-spacing: 0.025rem;
+  margin-bottom: 1.25rem;
+}
+
+.card_price_container {
   display: flex;
-  font-family: Fraunces;
+}
+
+.card_price_new {
+  font-family: "fraunces";
   color: hsl(158, 36%, 37%);
-  font-size: 2.19rem;
+  font-size: 2em;
   font-weight: 700;
   margin: 1.25rem 0 1.25rem 0;
+  padding-right: 1.25rem;
 }
 
-.price2 {
-  margin-left: 1.25rem;
+.card_price_old {
+  font-family: "Fraunces";
+  font-size: 0.812rem;
+  font-weight: 500;
+  padding-top: 0.625rem;
+  text-decoration: line-through;
   color: hsl(228, 12%, 48%);
-  font-size: 1.125rem;
-  font-weight: 200;
-  padding-top: 0.625rem ;
   text-decoration: line-through;
 }
 
-.icon_cart {
-  padding-right: 0.31rem;
+.alert-boxes .grid{
+  margin: 0;
 }
 
-.btn_container{
-  display: flex;
+.card_icon_btn {
+  margin-right: 0.31rem;
 }
 
-.btn {
+.card_btn {
+  width: 100%;
   border-radius: 0.625rem;
   border: none;
   color: white;
@@ -98,12 +104,70 @@ flex: 1 0 50%;
   font-size: 0.94rem;
   cursor: pointer;
   font-weight: 700;
-  width: 100%;
-  margin:0 auto;
+  margin-top: 0.94rem;
 }
-
 
 .attribution {
   text-align: center;
-  margin-top: 1.25rem;
+  font-size: 0.69rem;
+}
+
+@media (min-width: 600px) {
+  .card_container {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card_image_mobile {
+    display: none;
+  }
+
+  .card_image_desktop {
+    width: 300px;
+    height: 100%;
+    border-radius: 14px 0px 0 14px;
+    display: flex;
+  }
+
+  .card_content {
+    padding: 2rem;
+  }
+
+  .card_perfume {
+    letter-spacing: 0.25rem;
+    margin-bottom: 0.94rem;
+  }
+
+  .card_description {
+    margin-bottom: 1.56rem;
+  }
+
+.card_price_new{
+  font-family: "Fraunces";
+  color: hsl(158, 36%, 37%);
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 1.25rem 0 1.25rem 0;
+  padding-right: 1.25rem;
+}
+
+.card_price_old {
+  font-family: "Fraunces";
+  font-size: 0.81rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  padding-top: 0.75rem;
+}
+
+.card_btn{
+margin-top: 0.94rem;
+}
+
+.alert-boxes .grid{
+  margin: 0;
+}
+
 }
