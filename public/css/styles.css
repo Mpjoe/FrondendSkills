@@ -1,4 +1,246 @@
+/*1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+ box-sizing: border-box;
+}
 
+/*
+ 2. Remove default margin
+*/
+* {
+ margin: 0;
+}
+
+/*
+ 3. Allow percentage-based heights in the application
+*/
+html, body {
+ height: 100%;
+}
+
+/*
+ Typographic tweaks!
+ 4. Add accessible line-height
+ 5. Improve text rendering
+*/
+body {
+ line-height: 1.5;
+ -webkit-font-smoothing: antialiased;
+}
+
+/*
+ 7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+ font: inherit;
+}
+
+/*
+ 8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+ overflow-wrap: break-word;
+}
+
+/*
+ 9. Create a root stacking context
+*/
+#root, #__next {
+ isolation: isolate;
+}
+
+/* --- Styling Css Code ----*/
+
+body {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Fraunces";
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+}
+
+/*-- 343-612 Phone version --*/
+.card_container {
+  max-width: 21.44rem;
+  border-radius: 0.875rem;
+  margin-bottom: 1rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card_image_mobile {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  border-radius: 0.875rem 0.875rem 0 0;
+}
+
+.card_image_desktop {
+  display: none;
+}
+
+.card_content {
+  padding: 1.5rem;
+}
+
+.card_perfume {
+  font-family: "Montserrat";
+  letter-spacing: 0.19rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 0.75rem;
+}
+
+.card_title {
+  font-family: "Fraunces";
+  margin-bottom: 0.94rem;
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: hsl(212, 21%, 14%);
+  line-height: 2rem;
+}
+
+.card_description {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.25rem;
+  letter-spacing: 0.025rem;
+  margin-bottom: 1.25rem;
+}
+
+.card_price_container {
+  display: flex;
+}
+
+.card_price_new {
+  font-family: "fraunces";
+  color: hsl(158, 36%, 37%);
+  font-size: 2em;
+  font-weight: 700;
+  margin: 1.25rem 0 1.25rem 0;
+  padding-right: 1.25rem;
+}
+
+.card_price_old {
+  font-family: "Fraunces";
+  font-size: 0.812rem;
+  font-weight: 500;
+  padding-top: 0.625rem;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.alert-boxes .grid{
+  margin: 0;
+}
+
+.card_btn {
+  width: 100%;
+  border-radius: 0.625rem;
+  border: none;
+  color: white;
+  padding: 1rem 1rem;
+  background-color: hsl(158, 36%, 37%);
+  font-size: 0.94rem;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 0.94rem;
+}
+
+.card_icon_btn {
+  margin-right: 0.31rem;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.69rem;
+}
+
+@media (min-width: 600px) {
+  .card_container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .card_image_mobile {
+    display: none;
+  }
+
+  .card_image_desktop {
+    display: block;
+    max-width: 300px;
+
+    border-radius: 14px 0px 0 14px;
+    object-fit: cover;
+    flex: 1 1 50%;
+  }
+
+  .card_content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  }
+
+  .card_perfume {
+    letter-spacing: 0.25rem;
+    margin-bottom: 0.94rem;
+  }
+
+  .card_title {
+    margin-bottom: 1.44rem;
+  }
+
+  .card_description {
+    margin-bottom: 1.56rem;
+  }
+
+.card_price_container{
+  margin-bottom: 1.5rem;
+}
+
+.card_price_new{
+  font-family: "Fraunces";
+  color: hsl(158, 36%, 37%);
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 1.25rem 0 1.25rem 0;
+  padding-right: 1.25rem;
+}
+
+.card_price_old {
+  font-family: "Fraunces";
+  font-size: 0.81rem;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  padding-top: 0.75rem;
+}
+
+.card_btn{
+margin-top: auto;
+}
+
+.alert-boxes .grid{
+  margin: 0;
+}
+
+}
+
+
+/* Backup Code /*
+
+/*
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +253,15 @@ body {
   font-size: 0.875rem;
 }
 
-/*-- 343-612 Phone version --*/
+-- 343-612 Phone version ---
+
 .card_container {
   display: grid;
   width: 21.44rem;
   height: 38.25rem;
   border-radius: 0.875rem;
   grid-column: auto;
-  margin: 12.19rem auto 5rem;
+  margin: 12.19rem auto 2rem;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -171,3 +414,5 @@ margin-top: 0.94rem;
 }
 
 }
+
+*/
