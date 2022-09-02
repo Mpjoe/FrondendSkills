@@ -62,7 +62,6 @@ body {
 .card_container {
   max-width: 21.44rem;
   border-radius: 0.875rem;
-  margin-bottom: 1rem;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -156,6 +155,7 @@ body {
 .attribution {
   text-align: center;
   font-size: 0.69rem;
+  margin-top: 0.75rem;
 }
 
 @media (min-width: 600px) {
